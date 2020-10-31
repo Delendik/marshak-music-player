@@ -1,0 +1,6 @@
+.page{
+  height: 99vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
