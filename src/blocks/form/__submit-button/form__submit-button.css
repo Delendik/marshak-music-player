@@ -1,0 +1,10 @@
+.form__submit-button {
+  width: 593px;
+  height: 60px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: white;
+  margin: 43px 0 110px 0;
+}
