@@ -1,7 +1,15 @@
+@import url('./vendor/normalize.css');
+@import url('./fonts/inter.css');
 @import url('./blocks/body/body.css');
 @import url('./blocks/page/page.css');
 @import url('./blocks/page-container/page-container.css');
+@import url('./blocks/content/content.css');
+@import url('./blocks/articles/articles.css');
+@import url('./blocks/article/article.css');
+@import url('./blocks/form/form.css');
+@import url('./blocks/footer/footer.css');
 @import url('./blocks/logo/logo.css');
 @import url('./blocks/navigation/navigation.css');
 @import url('./blocks/logo-turbina/logo-turbina.css');
 @import url('./blocks/turbina-container/turbina-container.css');
+
