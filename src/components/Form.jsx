@@ -10,10 +10,18 @@ function Form() {
       <input type="email" placeholder="Почта" name="email" className="form__input"/>
       <textarea placeholder="Стихи" className="form__input form__input_size_l " name="text_large"/>
       <div className="form__row">
-        <input id="radio" type="radio" name="radio" className="form__radio-button"/>
-        <p className="form__paragraph">Согласен с
-          <a href="#" className="form__link">офертой</a></p>
+        <div className="checkbox">
+          <input type="checkbox" id="checkbox_1"/>
+          <label htmlFor="checkbox_1">
+          </label>
+        </div>
+        <div>
+          <p className="form__paragraph">Согласен с
+            <a href="#" className="form__link">офертой</a></p>
+        </div>
       </div>
+
+
       <button type="submit" className="form__submit-button">Отправить форму</button>
     </form>
   )
