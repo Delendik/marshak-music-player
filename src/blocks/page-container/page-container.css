@@ -8,8 +8,10 @@
   background-size: cover;
   overflow-y: scroll;
   overflow-x: hidden;
+  scrollbar-width: 0;
 }
 
 .page-container::-webkit-scrollbar{
   width: 0;
 }
+

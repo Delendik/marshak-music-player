@@ -7,12 +7,4 @@
   color: #FFFFFF;
   text-decoration: none;
   padding: 0 20px;
-  width: fit-content;
-  height: 40px;
-  border: 2px solid #FFFFFF;
-  border-radius: 30px;
-  box-sizing: border-box;
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
 }

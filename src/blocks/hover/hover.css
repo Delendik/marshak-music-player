@@ -1,0 +1,16 @@
+@-webkit-keyframes hover{
+  to{
+    transform: skewX(-20deg)
+  }
+}
+
+@keyframes hover{
+  to{
+    transform: skewX(-20deg)
+  }
+}
+
+.hover:hover{
+  -webkit-animation: hover 1s linear 1 forwards;
+          animation: hover 1s linear 1 forwards;
+}
