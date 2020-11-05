@@ -1,6 +1,7 @@
 .content {
   max-width: 1260px;
-  border-radius:  8px;
+  width: 98.43%;
+  border-radius: 8px;
   background-color: #ffffff;
   margin: 0 auto;
   padding: 20px 0 0 0;
@@ -8,4 +9,26 @@
   font-style: normal;
   font-weight: normal;
   color: #000000;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .content {
+    max-width: 1004px;
+    width: 98%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .content {
+    max-width: 748px;
+    width: 97.4%;
+  }
+}
+
+
+@media (max-width: 321px){
+  .content {
+    max-width: 310px;
+    width: 96.87%;
+  }
 }
