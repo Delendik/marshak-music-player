@@ -1,3 +1,6 @@
 .turbina-container{
-  padding: 0 210px;
+  padding: 0 280px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }

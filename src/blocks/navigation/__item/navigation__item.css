@@ -1,0 +1,12 @@
+.navigation__item{
+  height: 40px;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
