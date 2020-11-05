@@ -1,17 +1,27 @@
 import React, { useState } from 'react';
-import MobileNav from './MobileNav';
+import closeButton from '../images/closeMenu.svg';
 
-function Menu () {
-  const [widthWindow, setWidthWindow] = useState(window.innerWidth)
-
-  function changeWidth(){
-    setWidthWindow(window.innerWidth);
+function MobileNav() {
+  const [buttonClicked, setButtonClicked] = useState(false);
+  function handleClicked() {
+    setButtonClicked(!buttonClicked);
   }
-  window.addEventListener('resize', ()=> changeWidth());
-  if (widthWindow > 760){
+
+  if(!buttonClicked){
+    return(
+      <nav className = "navigation">
+        <button className = "navigation__mobile navigation__item " onClick={ handleClicked }>
+          <div className= "navigation__link hover">Стриминги</div> 
+        </button>
+      </nav>
+    )
+  } else{
     return(
       <nav className = "navigation">
         <ul className = "navigation__list">
+          <li className = "navigation__item" onClick={ handleClicked }>
+            <img className= "navigation__close-button" src={closeButton} alt="Закрыть меню стримингов" />
+          </li>
           <li className = "navigation__item">
             <a href="https://vk.com/vkmusic" target="_blank" rel="noreferrer" title = "VK Music" className="navigation__link hover">Яндекс.Музыка ↗</a>
           </li>
@@ -27,11 +37,7 @@ function Menu () {
         </ul> 
       </nav>
     )
-  } else {
-    return(
-      <MobileNav />
-    )
   }
 };
 
-export default Menu;
+export default MobileNav;
