@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/marshak-music-player/static/css/main.3a66fba3.chunk.css",
-    "main.js": "/marshak-music-player/static/js/main.31f9ef3d.chunk.js",
-    "main.js.map": "/marshak-music-player/static/js/main.31f9ef3d.chunk.js.map",
-    "runtime-main.js": "/marshak-music-player/static/js/runtime-main.a212023d.js",
-    "runtime-main.js.map": "/marshak-music-player/static/js/runtime-main.a212023d.js.map",
-    "static/js/2.85bcf76c.chunk.js": "/marshak-music-player/static/js/2.85bcf76c.chunk.js",
-    "static/js/2.85bcf76c.chunk.js.map": "/marshak-music-player/static/js/2.85bcf76c.chunk.js.map",
-    "static/js/3.9917d1d5.chunk.js": "/marshak-music-player/static/js/3.9917d1d5.chunk.js",
-    "static/js/3.9917d1d5.chunk.js.map": "/marshak-music-player/static/js/3.9917d1d5.chunk.js.map",
+    "main.css": "/marshak-music-player/static/css/main.03085e3a.chunk.css",
+    "main.js": "/marshak-music-player/static/js/main.45fd6312.chunk.js",
+    "main.js.map": "/marshak-music-player/static/js/main.45fd6312.chunk.js.map",
+    "runtime-main.js": "/marshak-music-player/static/js/runtime-main.a61e3268.js",
+    "runtime-main.js.map": "/marshak-music-player/static/js/runtime-main.a61e3268.js.map",
+    "static/js/2.a5e6f39c.chunk.js": "/marshak-music-player/static/js/2.a5e6f39c.chunk.js",
+    "static/js/2.a5e6f39c.chunk.js.map": "/marshak-music-player/static/js/2.a5e6f39c.chunk.js.map",
+    "static/js/3.927ad06c.chunk.js": "/marshak-music-player/static/js/3.927ad06c.chunk.js",
+    "static/js/3.927ad06c.chunk.js.map": "/marshak-music-player/static/js/3.927ad06c.chunk.js.map",
     "index.html": "/marshak-music-player/index.html",
-    "static/css/main.3a66fba3.chunk.css.map": "/marshak-music-player/static/css/main.3a66fba3.chunk.css.map",
-    "static/js/2.85bcf76c.chunk.js.LICENSE.txt": "/marshak-music-player/static/js/2.85bcf76c.chunk.js.LICENSE.txt",
+    "static/css/main.03085e3a.chunk.css.map": "/marshak-music-player/static/css/main.03085e3a.chunk.css.map",
+    "static/js/2.a5e6f39c.chunk.js.LICENSE.txt": "/marshak-music-player/static/js/2.a5e6f39c.chunk.js.LICENSE.txt",
     "static/media/index.css": "/marshak-music-player/static/media/logo.9422abe3.svg",
     "static/media/closeMenu.6c1eac8e.svg": "/marshak-music-player/static/media/closeMenu.6c1eac8e.svg",
+    "static/media/play.8f69e510.svg": "/marshak-music-player/static/media/play.8f69e510.svg",
+    "static/media/stop.90f4666c.svg": "/marshak-music-player/static/media/stop.90f4666c.svg",
     "static/media/turbina.9a288190.svg": "/marshak-music-player/static/media/turbina.9a288190.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a212023d.js",
-    "static/js/2.85bcf76c.chunk.js",
-    "static/css/main.3a66fba3.chunk.css",
-    "static/js/main.31f9ef3d.chunk.js"
+    "static/js/runtime-main.a61e3268.js",
+    "static/js/2.a5e6f39c.chunk.js",
+    "static/css/main.03085e3a.chunk.css",
+    "static/js/main.45fd6312.chunk.js"
   ]
 }
