@@ -15,7 +15,9 @@ function App() {
         <Logo/>
         <Menu/>
         <Turbina/>
-       <Audio2 />
+        <div className="App"> {/* плеер */}
+          <Audio />
+        </div>
         <div className="content">
           <Articles/>
           <Form/>
@@ -27,7 +29,3 @@ function App() {
 }
 
 export default App;
-
-// <div className="App"> {/* плеер */}
-//           <Audio />
-//         </div>
