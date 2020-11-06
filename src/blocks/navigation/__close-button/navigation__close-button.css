@@ -1,0 +1,6 @@
+.navigation__close-button{
+  width: 25px;
+  height: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}

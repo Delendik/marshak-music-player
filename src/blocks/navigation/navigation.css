@@ -2,6 +2,7 @@
 @import url('./__item/navigation__item.css');
 @import url('./__link/navigation__link.css');
 @import url('./__mobile/navigation__mobile.css');
+@import url('./__close-button/navigation__close-button.css');
 
 .navigation{
   position: absolute;

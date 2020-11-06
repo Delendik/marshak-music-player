@@ -43,7 +43,7 @@ export default function Bar(props) {
             <div className="bar__progress" style={{background: `linear-gradient(to right, orange ${curPercentage}%, white 0)`}} onMouseDown={e => handleTimeDrag(e)}>
                 <span className="bar__progress__knob" style={{ left: `${curPercentage - 2}%` }} />
             </div>
-            <span className="bar__time">{formatDuration(duration)}</span>
+        <span className="bar__time">{formatDuration(duration)}</span>
         </div>
     )
 }
