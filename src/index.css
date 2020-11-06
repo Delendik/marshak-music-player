@@ -14,6 +14,10 @@
 @import url('./blocks/navigation/navigation.css');
 @import url('./blocks/logo-turbina/logo-turbina.css');
 @import url('./blocks/turbina-container/turbina-container.css');
+@import url('./blocks/bar/bar.css');
+@import url('./blocks/controls/controls.css'); 
+@import url('./blocks/player/player.css'); 
+@import url('./blocks/song/song.css');
 
 
 
