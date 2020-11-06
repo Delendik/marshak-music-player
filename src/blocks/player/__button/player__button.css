@@ -1,0 +1,15 @@
+.player__button {
+    width: fit-content;
+    margin: 0 0 35px 25px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.player__button:focus {
+    outline: none;
+}
+
+.player__button:hover {
+    cursor: pointer;
+}
