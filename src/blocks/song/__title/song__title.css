@@ -1,0 +1,16 @@
+.song__title {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.song__title:hover {
+    color: greenyellow;
+}
+
+@media screen and (max-width: 500px) {
+    .song__title {
+        font-size: 2.5em;
+    }
+}

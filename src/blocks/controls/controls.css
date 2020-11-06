@@ -1,0 +1,15 @@
+.controls {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .controls {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
