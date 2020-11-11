@@ -54,15 +54,3 @@
 .checkbox input[type="checkbox"]:checked + label::after {
   content: "";
 }
-
-
-
-
-
-
-
-
-
-
-
-

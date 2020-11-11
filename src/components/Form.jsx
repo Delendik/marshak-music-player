@@ -1,13 +1,29 @@
 import React from 'react';
 
 function Form() {
+  //ЛОГИКА ВАЛИДАЦИИ
 
+  //ВАЛИДАЦИЯ ЧЕКБОКСА
+  const checkCheckboxValidity = (evt) => {
+    if (!document.querySelector('.form').querySelector('#checkbox_1').validity.valid) {
+      document.querySelector('.form').querySelector('.form__row').classList.add('form__row_error')
+      document.querySelector('.form').querySelector('.form__link').classList.add('form__link_error')
+    } else {
+      document.querySelector('.form').querySelector('.form__row').classList.remove('form__row_error')
+      document.querySelector('.form').querySelector('.form__link').classList.remove('form__link_error')
+    }
+    toggleButtonState()
+  }
+
+  //ВАЛИДАЦИЯ ИНПУТОВ
   const checkInputValidity = (evt) => {
     if (evt.target.validity.valid) {
       evt.target.classList.remove('form__input_error')
       evt.target.nextSibling.textContent = ''
+      evt.target.style = "color: #000000;"
     } else {
       evt.target.classList.add('form__input_error')
+      evt.target.style = "color: #F00"
       if (evt.target.type === 'tel') {
         evt.target.nextSibling.textContent = 'Пожалуйста введите номер телефона.'
       } else {
@@ -18,20 +34,43 @@ function Form() {
         }
       }
     }
+    toggleButtonState()
+
   }
 
-  const submitFunction = (evt) => {
-    evt.preventDefault()
+  //ВАЛИДАЦИЯ КНОПКИ
+  const toggleButtonState = () => {
+    console.log(checkInvalidValidity())
+    if (checkInvalidValidity() === false) {
+
+      document.querySelector('.form').querySelector('.form__submit-button').disabled = false;
+      document.querySelector('.form').querySelector('.form__submit-button').classList.remove('form__submit-button_disable')
+    } else {
+      document.querySelector('.form').querySelector('.form__submit-button').disabled = true;
+      document.querySelector('.form').querySelector('.form__submit-button').classList.add('form__submit-button_disable');
+    }
+  }
+
+  // ПРОВЕРКА ВАЛИДАЦИИ ВСЕЙ ФОРМЫ
+  const checkInvalidValidity = () => {
     const form = document.querySelector('.form')
     const inputList = Array.from(form.querySelectorAll('.form__input'))
-    if (inputList.some((item) => {
-     return item.validity.valid
-    }) === true && form.querySelector('#checkbox_1').validity.valid === true) {
+
+    inputList.push(form.querySelector('#checkbox_1'))
+    return inputList.some((item) => {
+      return !item.validity.valid
+    })
+  }
+
+
+  // ЛОГИКА САБМИТА
+  const submitFunction = (evt) => {
+    evt.preventDefault()
+    if (checkInvalidValidity()) {
       console.log('Отправляем данные на сервер')
     } else {
       console.log('С валидацией всё плохо')
     }
-
   }
 
   return (
@@ -70,7 +109,7 @@ function Form() {
                 required/>
       <div className="form__row">
         <div className="checkbox">
-          <input type="checkbox" required id="checkbox_1"/>
+          <input onInput={checkCheckboxValidity} type="checkbox" required id="checkbox_1"/>
           <label htmlFor="checkbox_1">
           </label>
         </div>

@@ -10,7 +10,7 @@
   margin: 0 auto;
   padding: 0;
   border: 0;
-  font-family: 'Inter', 'Arial', sans-serif;
+  font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -22,14 +22,15 @@
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   .footer {
-    width: 98%;
+    max-width: 1250px;
+    min-width: 994px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .footer {
-    max-width: 1004px;
-    width: 98%;
+    max-width: 994px;
+    min-width: 738px;
     font-size: 15px;
     line-height: 22px;
   }
@@ -41,7 +42,6 @@
     line-height: 22px;
     min-height: 89px;
     max-width: 310px;
-    width: 96.87%;
     flex-direction: column;
     margin: 0 auto;
     justify-content: center;

@@ -1,0 +1,8 @@
+.form__submit-button_disable{
+  opacity: .5;
+}
+
+.form__submit-button_disable:hover {
+  font-style: normal;
+  cursor: inherit;
+}
