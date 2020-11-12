@@ -7,7 +7,7 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .articles{
     max-width: 680px;
-    width: 67.73%;
+    min-width: 648px;
   }
 
 }
@@ -15,16 +15,15 @@
 @media (min-width: 321px) and (max-width: 768px) {
   .articles {
     max-width: 648px;
-    width: 86.63%;
-    margin: 0 auto;
+    min-width: 270px;
+    margin: 0 50px;
   }
 }
 
 @media (max-width: 320px) {
   .articles {
     max-width: 270px;
-    width: 87.09%;
-    margin: 0 auto;
+    margin: 0 20px;
   }
 }
 

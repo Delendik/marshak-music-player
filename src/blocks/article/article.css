@@ -1,6 +1,6 @@
 @import url('./__paragraph/article__paragraph.css');
 @import url('./__title/article__title.css');
-
+@import url('./__list/article__list.css');
 .article {
   list-style: none;
   font-family: Inter, Arial, sans-serif;
@@ -10,21 +10,3 @@
   max-width: 760px;
   margin: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

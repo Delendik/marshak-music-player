@@ -1,27 +1,31 @@
 .content {
   max-width: 1260px;
-  width: 98.43%;
   border-radius: 8px;
   background-color: #ffffff;
-  margin: 20px auto 0;
-  padding: 0;
-  font-family: 'Inter', 'Arial', sans-serif;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+
   font-style: normal;
   font-weight: normal;
   color: #000000;
 }
-
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .content{
+    margin: 0 10px;
+  }
+}
 @media (min-width: 769px) and (max-width: 1024px) {
   .content {
     max-width: 1004px;
-    width: 98%;
+    margin: 0 10px;
   }
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
   .content {
     max-width: 748px;
-    width: 97.4%;
+    margin: 0 10px;
   }
 }
 
@@ -29,6 +33,6 @@
 @media (max-width: 321px){
   .content {
     max-width: 310px;
-    width: 96.87%;
+    margin: 0 5px;
   }
 }
