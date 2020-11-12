@@ -1,25 +1,29 @@
 .turbina-container{
-  padding: 0 280px;
+  margin: 0 280px;
   height: 100%;
   display: flex;
   align-items: center;
   transition: all 0.5s ease-in;
+  background-image: url('../../images/turbina.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 @media only screen and (max-width: 1270px){
   .turbina-container{
-    padding: 0 212px;
+    margin: 0 212px;
   }
 }
 
 @media only screen and (max-width: 1020px){
   .turbina-container{
-    padding: 0 74px;
+    margin: 0 74px;
   }
 }
 
 @media only screen and (max-width: 760px){
   .turbina-container{
-    padding: 0 25px;
+    margin: 0 25px;
   }
 }

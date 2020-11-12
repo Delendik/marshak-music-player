@@ -1,7 +1,8 @@
 import React from 'react';
 
 function Form() {
-  //ЛОГИКА ВАЛИДАЦИИ
+//**********************************************************************************
+//ЛОГИКА ВАЛИДАЦИИ
 
   //ВАЛИДАЦИЯ ЧЕКБОКСА
   const checkCheckboxValidity = (evt) => {
@@ -30,19 +31,20 @@ function Form() {
         if (evt.target.type === 'email') {
           evt.target.nextSibling.textContent = 'Введите адрес электронной почты.'
         } else {
-          evt.target.nextSibling.textContent = 'Введите имя и фамилию.'
+          if (evt.target.classList.contains("form__input_size_l")) {
+            evt.target.nextSibling.textContent = 'Введите стихи.'
+          } else {
+            evt.target.nextSibling.textContent = 'Введите имя и фамилию.'
+          }
         }
       }
     }
     toggleButtonState()
-
   }
 
   //ВАЛИДАЦИЯ КНОПКИ
   const toggleButtonState = () => {
-    console.log(checkInvalidValidity())
     if (checkInvalidValidity() === false) {
-
       document.querySelector('.form').querySelector('.form__submit-button').disabled = false;
       document.querySelector('.form').querySelector('.form__submit-button').classList.remove('form__submit-button_disable')
     } else {
@@ -55,21 +57,23 @@ function Form() {
   const checkInvalidValidity = () => {
     const form = document.querySelector('.form')
     const inputList = Array.from(form.querySelectorAll('.form__input'))
-
     inputList.push(form.querySelector('#checkbox_1'))
     return inputList.some((item) => {
       return !item.validity.valid
     })
   }
 
-
   // ЛОГИКА САБМИТА
   const submitFunction = (evt) => {
     evt.preventDefault()
-    if (checkInvalidValidity()) {
-      console.log('Отправляем данные на сервер')
-    } else {
-      console.log('С валидацией всё плохо')
+    const form = document.querySelector('.form')
+    if (!toggleButtonState()) {
+      return {
+        name: form.querySelector('.form__input-name').value,
+        phone: form.querySelector('.form__input-phone').value,
+        email: form.querySelector('.form__input-email').value,
+        poem: form.querySelector('.form__input-poem').value
+      }
     }
   }
 
@@ -81,32 +85,32 @@ function Form() {
              type="text"
              placeholder="Имя и фамилия автора"
              name="name"
-             className="form__input"
+             className="form__input form__input-name"
              minLength="5"
              required/>
-      <span id="input-name-error"
-            className="form__input_type_error"></span>
+      <span className="form__input_type_error"></span>
       <input type="tel"
              onInput={checkInputValidity}
              placeholder="Телефон"
              name="tel"
-             className="form__input"
+             className="form__input form__input-phone"
              pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
              required/>
-      <span id="input-tel-error"
-            className="form__input_type_error"></span>
+      <span className="form__input_type_error"></span>
       <input type="email"
              onInput={checkInputValidity}
              placeholder="Почта"
              name="email"
-             className="form__input"
+             className="form__input form__input-email"
              required/>
-      <span id="input-email-error"
-            className="form__input_type_error"></span>
+      <span className="form__input_type_error"></span>
       <textarea placeholder="Стихи"
-                className="form__input form__input_size_l "
+                minLength="20"
+                onInput={checkInputValidity}
+                className="form__input form__input_size_l form__input-poem"
                 name="text_large"
                 required/>
+      <span className="form__input_type_error"></span>
       <div className="form__row">
         <div className="checkbox">
           <input onInput={checkCheckboxValidity} type="checkbox" required id="checkbox_1"/>
@@ -118,7 +122,9 @@ function Form() {
             <a href="/" className="form__link">офертой</a></p>
         </div>
       </div>
-      <button onClick={submitFunction} type="submit" className="form__submit-button">Отправить форму</button>
+      <button onClick={submitFunction} type="submit"
+              className="form__submit-button form__submit-button_disable">Отправить форму
+      </button>
       <span id="input-submit-error" className="form__input_type_error"></span>
     </form>
   )

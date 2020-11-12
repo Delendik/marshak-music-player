@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Logo from './components/Logo';
 import Menu from './components/Menu';
 import Turbina from './components/Turbina';
-import Audio from "./components/Audio" /* плеер */
+//import Audio from "./components/Audio" /* плеер */
 import Audio2 from "./components/Audio2"
 
 function App() {
@@ -15,9 +15,9 @@ function App() {
         <Logo/>
         <Menu/>
         <Turbina/>
-        <div className="App"> {/* плеер */}
-          <Audio />
-        </div>
+
+          <Audio2 />
+
         <div className="content">
           <Articles/>
           <Form/>
