@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/marshak-music-player/static/css/main.b9bad69d.chunk.css",
-    "main.js": "/marshak-music-player/static/js/main.6f289ed0.chunk.js",
-    "main.js.map": "/marshak-music-player/static/js/main.6f289ed0.chunk.js.map",
+    "main.css": "/marshak-music-player/static/css/main.eed8b73a.chunk.css",
+    "main.js": "/marshak-music-player/static/js/main.0d05e26d.chunk.js",
+    "main.js.map": "/marshak-music-player/static/js/main.0d05e26d.chunk.js.map",
     "runtime-main.js": "/marshak-music-player/static/js/runtime-main.a212023d.js",
     "runtime-main.js.map": "/marshak-music-player/static/js/runtime-main.a212023d.js.map",
     "static/js/2.85bcf76c.chunk.js": "/marshak-music-player/static/js/2.85bcf76c.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.9917d1d5.chunk.js": "/marshak-music-player/static/js/3.9917d1d5.chunk.js",
     "static/js/3.9917d1d5.chunk.js.map": "/marshak-music-player/static/js/3.9917d1d5.chunk.js.map",
     "index.html": "/marshak-music-player/index.html",
-    "static/css/main.b9bad69d.chunk.css.map": "/marshak-music-player/static/css/main.b9bad69d.chunk.css.map",
+    "static/css/main.eed8b73a.chunk.css.map": "/marshak-music-player/static/css/main.eed8b73a.chunk.css.map",
     "static/js/2.85bcf76c.chunk.js.LICENSE.txt": "/marshak-music-player/static/js/2.85bcf76c.chunk.js.LICENSE.txt",
     "static/media/index.css": "/marshak-music-player/static/media/turbina.9a288190.svg",
     "static/media/KagdbiyRaz.24285e2e.mp3": "/marshak-music-player/static/media/KagdbiyRaz.24285e2e.mp3",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.a212023d.js",
     "static/js/2.85bcf76c.chunk.js",
-    "static/css/main.b9bad69d.chunk.css",
-    "static/js/main.6f289ed0.chunk.js"
+    "static/css/main.eed8b73a.chunk.css",
+    "static/js/main.0d05e26d.chunk.js"
   ]
 }
