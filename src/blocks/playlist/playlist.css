@@ -1,0 +1,7 @@
+@import url('./__item/playlist__item.css');
+@import url('./__title/playlist__title.css');
+
+.playlist{
+  display: flex;
+  flex-direction: column;
+}
