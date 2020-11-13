@@ -1,7 +1,8 @@
 .player__timeline-bar{
   height: 100%;
   position: absolute;
-  left: 0;
-  top: 0;
-  background-color: lime;
+  box-sizing: border-box;
+  left: -2px;
+  top: -2px;
+  border: 2px solid #FFFFFF;
 }
