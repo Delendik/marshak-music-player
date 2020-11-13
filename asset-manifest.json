@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/marshak-music-player/static/css/main.2aa2342d.chunk.css",
-    "main.js": "/marshak-music-player/static/js/main.ec1368ce.chunk.js",
-    "main.js.map": "/marshak-music-player/static/js/main.ec1368ce.chunk.js.map",
+    "main.css": "/marshak-music-player/static/css/main.1e425c53.chunk.css",
+    "main.js": "/marshak-music-player/static/js/main.f1d15a9e.chunk.js",
+    "main.js.map": "/marshak-music-player/static/js/main.f1d15a9e.chunk.js.map",
     "runtime-main.js": "/marshak-music-player/static/js/runtime-main.a212023d.js",
     "runtime-main.js.map": "/marshak-music-player/static/js/runtime-main.a212023d.js.map",
     "static/js/2.85bcf76c.chunk.js": "/marshak-music-player/static/js/2.85bcf76c.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.9917d1d5.chunk.js": "/marshak-music-player/static/js/3.9917d1d5.chunk.js",
     "static/js/3.9917d1d5.chunk.js.map": "/marshak-music-player/static/js/3.9917d1d5.chunk.js.map",
     "index.html": "/marshak-music-player/index.html",
-    "static/css/main.2aa2342d.chunk.css.map": "/marshak-music-player/static/css/main.2aa2342d.chunk.css.map",
+    "static/css/main.1e425c53.chunk.css.map": "/marshak-music-player/static/css/main.1e425c53.chunk.css.map",
     "static/js/2.85bcf76c.chunk.js.LICENSE.txt": "/marshak-music-player/static/js/2.85bcf76c.chunk.js.LICENSE.txt",
     "static/media/index.css": "/marshak-music-player/static/media/turbina.9a288190.svg",
     "static/media/KagdbiyRaz.24285e2e.mp3": "/marshak-music-player/static/media/KagdbiyRaz.24285e2e.mp3",
@@ -18,12 +18,15 @@
     "static/media/closeMenu.6c1eac8e.svg": "/marshak-music-player/static/media/closeMenu.6c1eac8e.svg",
     "static/media/id_1.4d603e7b.jpg": "/marshak-music-player/static/media/id_1.4d603e7b.jpg",
     "static/media/id_2.12ef8f11.jpg": "/marshak-music-player/static/media/id_2.12ef8f11.jpg",
-    "static/media/jamming.75b160f7.mp3": "/marshak-music-player/static/media/jamming.75b160f7.mp3"
+    "static/media/jamming.75b160f7.mp3": "/marshak-music-player/static/media/jamming.75b160f7.mp3",
+    "static/media/openPlayList.0f4d57ea.svg": "/marshak-music-player/static/media/openPlayList.0f4d57ea.svg",
+    "static/media/pause1.f1b1ba9e.svg": "/marshak-music-player/static/media/pause1.f1b1ba9e.svg",
+    "static/media/play1.8a504c35.svg": "/marshak-music-player/static/media/play1.8a504c35.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a212023d.js",
     "static/js/2.85bcf76c.chunk.js",
-    "static/css/main.2aa2342d.chunk.css",
-    "static/js/main.ec1368ce.chunk.js"
+    "static/css/main.1e425c53.chunk.css",
+    "static/js/main.f1d15a9e.chunk.js"
   ]
 }
