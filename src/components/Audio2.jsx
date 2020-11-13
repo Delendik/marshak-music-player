@@ -29,10 +29,10 @@ function Audio2 () {
   const onPause = (evt) => {
     
   }
-  
 
   return(
     <div className = "player">
+    <div>
       <audio 
         className="player__default"
         src={currentTrack.file}
@@ -54,25 +54,30 @@ function Audio2 () {
             myPlayer.current.play();
             setIsPlaying(true)
           }
-        }
-        
-        }
-        
-      > {isPlaying ? 'pause' : 'play'} </button>
-      <div className="player__control">
-        {currentTrack.title} - {currentTrack.author1} feat {currentTrack.author2}
-      </div>
-      <PlayerTimeline 
-        currentTime={currentTime}
-        duration={duration}
-        onClick={time => {
-          myPlayer.current.currentTime=time
         }}
-      />
-      <div>playtime: {msToTime(Math.round(currentTime))} </div>
-      <div>duration: {msToTime(Math.round(duration))} </div>
-      <div className="player__button-playlist"></div>
-      <div className="playlist">
+      > {isPlaying ? 'pause' : 'play'} </button>
+    </div>
+    <div>
+      <div className="player__info-part">
+        <div className="player__control">
+          {currentTrack.title} - {currentTrack.author1} feat {currentTrack.author2}
+        </div>
+        <div>{msToTime(Math.round(currentTime))} </div>
+        {/* <div>duration: {msToTime(Math.round(duration))} </div> */}
+      </div>
+    </div>
+    <div className="player__button-playlist"></div>
+    <div></div>
+    <PlayerTimeline 
+      currentTime={currentTime}
+      duration={duration}
+      onClick={time => {
+        myPlayer.current.currentTime=time
+      }}
+    />
+    <div></div>
+      
+      {/* <div className="playlist">
         <div className="playlist__title">Релизы:</div>
         {playList.map(item => <PlaylistItem 
           item={item} 
@@ -83,7 +88,7 @@ function Audio2 () {
             }} 
 
         />)}
-      </div>
+      </div> */}
     </div>
   )
 };

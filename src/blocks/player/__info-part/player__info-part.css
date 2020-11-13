@@ -1,0 +1,4 @@
+.player__info-part{
+  display: flex;
+  justify-content: space-between;
+}
