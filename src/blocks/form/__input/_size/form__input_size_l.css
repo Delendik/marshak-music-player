@@ -1,0 +1,8 @@
+.form__input_size_l{
+  min-height: 60px;
+  max-width: 100%;
+  min-width: 100%;
+  padding-top: 19px;
+  font-size: 16px;
+  line-height: 20px;
+}

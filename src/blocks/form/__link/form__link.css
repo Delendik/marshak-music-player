@@ -1,0 +1,28 @@
+.form__link:hover {
+  font-style: italic;
+  transition: all 0.5s ease-in;
+}
+
+.form__link{
+  text-decoration: underline;
+  text-transform: none;
+  font-size: 16px;
+  margin: 0 0 0 5px;
+  line-height: 22px;
+  color: black;
+  transition: all 0.5s ease-in;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .form__link{
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 320px) {
+  .form__link{
+    font-size: 12px;
+    line-height: 22px;
+  }
+}

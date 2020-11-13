@@ -1,0 +1,11 @@
+.player__button-playlist_open{
+  padding-right: 25px;
+  transition: all 0.5s ease-in;
+}
+
+@media only screen and (max-width: 760px){
+  .player__button-playlist_open{
+    padding-right: 13px;
+    height: 16px;
+  }
+}

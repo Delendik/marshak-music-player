@@ -1,0 +1,17 @@
+@import url('./__time/bar__time.css');
+@import url('./__progress/bar__progress.css');
+@import url('./__progress__knob/bar__progress__knob.css');
+
+.bar {
+    user-select: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .bar {
+        width: 90%;
+    }
+}

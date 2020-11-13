@@ -1,0 +1,16 @@
+.player__button{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.player__button:focus{
+  outline: none;
+}
+
+.player__button:hover{
+  cursor: pointer;
+}

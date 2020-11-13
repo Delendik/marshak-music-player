@@ -1,0 +1,25 @@
+@import url('./__button/player__button.css');
+@import url('./__button-image/player__button-image.css');
+@import url('./__timeline/player__timeline.css');
+@import url('./__timeline-bar/player__timeline-bar.css');
+@import url('./__default/player__default.css');
+@import url('./__info-part/player__info-part.css');
+@import url('./__control/player__control.css');
+@import url('./__time/player__time.css');
+@import url('./__button-playlist/_open/player__button-playlist_open.css');
+
+.player {
+    width: 100%;
+    display: grid;
+    grid: 24px 2px/ 65px 1fr 70px;
+    padding: 0;
+    max-width: 1260px;
+    margin: 0 auto;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 760px){
+.player{
+    grid: 20px 2px/ 40px 1fr 40px;
+}
+}

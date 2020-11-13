@@ -1,0 +1,13 @@
+@import url('./__artist/song__artist.css');
+@import url('./__title/song__title.css');
+@import url('./__separation/song__separation.css');
+
+.song {
+    display: flex;
+    align-content: flex-start;
+    position: relative;
+    margin: 0 auto 13px 0;
+}
+
+
+

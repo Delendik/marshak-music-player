@@ -1,0 +1,27 @@
+.article__paragraph {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 14px 0;
+  transition: all 0.5s ease-in;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .article__paragraph {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .article__paragraph {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 320px) {
+  .article__paragraph {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

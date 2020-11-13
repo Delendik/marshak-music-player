@@ -1,2 +1,3 @@
-# marshak-music-player
-Music player for Marshak bookshop
+# [Marshak music](https://delendik.github.io/marshak-music-player/)
+
+Плеер для проекта "Турбина" книжного магазина Маршак

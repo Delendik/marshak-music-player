@@ -1,0 +1,23 @@
+.footer__link {
+  text-decoration: underline;
+  text-transform: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 0 5px;
+  transition: all 0.5s ease-in;
+}
+
+.footer__link:hover {
+  font-style: italic;
+  transition: 5s linear;
+}
+
+
+
+@media (max-width: 767px) {
+  .footer__link{
+    font-size: 12px;
+    line-height: 22px;
+  }
+}

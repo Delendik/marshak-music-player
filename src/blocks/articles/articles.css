@@ -1,0 +1,29 @@
+.articles {
+  margin: 0 0 0 50px;
+  padding: 0 0 0 0;
+  transition: all 0.5s ease-in;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .articles{
+    max-width: 680px;
+    min-width: 648px;
+  }
+
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .articles {
+    max-width: 648px;
+    min-width: 270px;
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .articles {
+    max-width: 270px;
+    margin: 0 20px;
+  }
+}
+

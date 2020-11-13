@@ -1,0 +1,26 @@
+.navigation__item{
+  height: 40px;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: all 0.5s ease-in;
+}
+
+@media only screen and (max-width: 1270px){
+  .navigation__item{
+    height: 34px;
+    margin-top: 7px;
+  }
+}
+
+@media only screen and (max-width: 760px){
+  .navigation__item{
+    height: 29px;
+  }
+}
