@@ -4,6 +4,9 @@
   line-height: 24px;
   color: #FFFFFF;
   transition: all 0.5s ease-in;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1270px){
@@ -13,9 +16,15 @@
   }
 }
 
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 550px){
   .player__control{
     font-size: 14px;
     line-height: 19px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .player__control{
+    max-width: 200px;
   }
 }
