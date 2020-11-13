@@ -4,6 +4,9 @@ import PlaylistItem from './PlaylistItem'
 import PlayerTimeline from "./PlayerTimeline"
 import throttle from '../utils/throttling'
 import msToTime from '../utils/convert-ms-min'
+import play1 from '../images/player/play1.svg';
+import pause1 from '../images/player/pause1.svg';
+import openPlayList from '../images/player/openPlayList.svg';
 
 function Audio2 () {
   const [currentTrack, setCurrentTrack] = useState(playList[0]);
@@ -29,39 +32,48 @@ function Audio2 () {
   const onPause = (evt) => {
     
   }
-  
 
   return(
     <div className = "player">
-      <audio 
-        className="player__default"
-        src={currentTrack.file}
-        controls
-        ref={myPlayer}
-        onPlay={onPlay}
-        onPause={onPause}
-        onTimeUpdate = {onTimeUpdate}
-        onLoadedData={() => setDuration(myPlayer.current.duration)}
-      >
-        Your browser doesn't support audio
-      </audio>
-      <button 
-        onClick={() =>{
-          if(isPlaying){
-            myPlayer.current.pause();
-            setIsPlaying(false)
-          } else{
-            myPlayer.current.play();
-            setIsPlaying(true)
-          }
-        }
-        
-        }
-        
-      > {isPlaying ? 'pause' : 'play'} </button>
-      <div className="player__control">
-        {currentTrack.title} - {currentTrack.author1} feat {currentTrack.author2}
+      <div className="grid__1">
+        <audio 
+          className="player__default"
+          src={currentTrack.file}
+          controls
+          ref={myPlayer}
+          onPlay={onPlay}
+          onPause={onPause}
+          onTimeUpdate = {onTimeUpdate}
+          onLoadedData={() => setDuration(myPlayer.current.duration)}
+        >
+          Your browser doesn't support audio
+        </audio>
+        <button 
+          className="player__button"
+          onClick={() =>{
+            if(isPlaying){
+              myPlayer.current.pause();
+              setIsPlaying(false)
+            } else{
+              myPlayer.current.play();
+              setIsPlaying(true)
+            }
+          }}
+        > <img src={isPlaying ? pause1 : play1} alt={isPlaying ? 'пауза' : 'старт'} className="player__button-image" /> </button>
       </div>
+      <div>
+        <div className="player__info-part">
+          <div className="player__control">
+            {currentTrack.title} - {currentTrack.author1} feat {currentTrack.author2}
+          </div>
+          <div className="player__time">{msToTime(Math.round(currentTime))} </div>
+          {/* <div>duration: {msToTime(Math.round(duration))} </div> */}
+        </div>
+      </div>
+      <div className="player__button">
+        <img src={openPlayList} alt="Плейлист" className="player__button-playlist_open" />
+      </div>
+      <div></div>
       <PlayerTimeline 
         currentTime={currentTime}
         duration={duration}
@@ -69,21 +81,20 @@ function Audio2 () {
           myPlayer.current.currentTime=time
         }}
       />
-      <div>playtime: {msToTime(Math.round(currentTime))} </div>
-      <div>duration: {msToTime(Math.round(duration))} </div>
-      <div className="player__button-playlist"></div>
-      <div className="playlist">
-        <div className="playlist__title">Релизы:</div>
-        {playList.map(item => <PlaylistItem 
-          item={item} 
-          key={item.id}
-          onClick={item => {
-            setCurrentTrack(item)
-            setIsPlaying(false)
-            }} 
+      <div></div>
+        
+        {/* <div className="playlist">
+          <div className="playlist__title">Релизы:</div>
+          {playList.map(item => <PlaylistItem 
+            item={item} 
+            key={item.id}
+            onClick={item => {
+              setCurrentTrack(item)
+              setIsPlaying(false)
+              }} 
 
-        />)}
-      </div>
+          />)}
+        </div> */}
     </div>
   )
 };

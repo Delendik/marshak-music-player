@@ -1,0 +1,17 @@
+.player__button-image{
+  padding-left: 25px;
+  transition: all 0.5s ease-in;
+}
+
+@media only screen and (max-width: 1270px){
+  .player__button-image{
+    height: 18px;
+  }
+}
+
+@media only screen and (max-width: 760px){
+  .player__button-image{
+    padding-left: 15px;
+    height: 16px;
+  }
+}

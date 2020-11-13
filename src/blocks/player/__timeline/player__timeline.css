@@ -1,7 +1,8 @@
 .player__timeline{
-  height: 50px;
+  height: 2px;
   width: 100%;
+  box-sizing: border-box;
   position: relative;
   background-color: transparent;
-  border: 1px solid lightsalmon;
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }

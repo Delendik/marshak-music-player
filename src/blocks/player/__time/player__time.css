@@ -1,0 +1,21 @@
+.player__time{
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1270px){
+  .player__time{
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .player__time{
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
