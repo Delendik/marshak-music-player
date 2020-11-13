@@ -1,9 +1,13 @@
 import React from 'react';
 
 function Form() {
-//**********************************************************************************
-//ЛОГИКА ВАЛИДАЦИИ
+  //____________________КОНФИГ API____________________
+  const Api = {
+    url: 'https://lolkek.com/',
+    auth: '77777777777777777777777'
+  }
 
+  //ЛОГИКА ВАЛИДАЦИИ
   //ВАЛИДАЦИЯ ЧЕКБОКСА
   const checkCheckboxValidity = (evt) => {
     if (!document.querySelector('.form').querySelector('#checkbox_1').validity.valid) {
@@ -63,17 +67,39 @@ function Form() {
     })
   }
 
+  const controlError = (promise) => {
+    return promise.then((res) => {
+      if (!res.ok) {
+        return Promise.reject(`Ошибка: ${res.status}`);
+      } else {
+        return res.json()
+      }
+    })
+  }
+
+  const postApi = (data) => {
+    const promise = fetch(`${Api.url}`, {
+      method: 'POST',
+      headers: {
+        authorization: `${Api.auth}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    return controlError(promise)
+  }
+
   // ЛОГИКА САБМИТА
   const submitFunction = (evt) => {
     evt.preventDefault()
     const form = document.querySelector('.form')
     if (!toggleButtonState()) {
-      return {
+      postApi({
         name: form.querySelector('.form__input-name').value,
         phone: form.querySelector('.form__input-phone').value,
         email: form.querySelector('.form__input-email').value,
         poem: form.querySelector('.form__input-poem').value
-      }
+      })
     }
   }
 
@@ -128,6 +154,6 @@ function Form() {
       <span id="input-submit-error" className="form__input_type_error"></span>
     </form>
   )
-};
+}
 
 export default Form
